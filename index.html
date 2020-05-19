@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ideal Sleep Calculator</title>
+	<link rel="stylesheet" href="site.css">
+</head>
+<body onload="init()">
+
+	<div id="sleepAppContainer">
+	
+		<div id="logo"><h1>Ideal Sleep Calculator</h1></div>
+
+		<div id="likeToSleep">
+			
+			<h2 id="likeToSleepTitle">How many hours would you like to sleep per night?</h2>
+			<div class="likeToSleepInput"><input type="number" id="numberLikeToSleep"><label> Hours</label></div>
+
+		</div>
+
+		<div id="howMuchDoYouSleep">
+
+		<h2 class="tableHeader">How many hours did you sleep each night in the last week?</h2>
+
+		<table class="howMuchDoYouSleepTable">
+
+			<tr>
+				<td>Monday:</td>
+				<td><input type="number" id="monday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Tuesday:</td>
+				<td><input type="number" id="tuesday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Wednesday:</td>
+				<td><input type="number" id="wednesday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Thursday:</td>
+				<td><input type="number" id="thursday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Friday:</td>
+				<td><input type="number" id="friday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Saturday:</td>
+				<td><input type="number" id="saturday"><label> Hours</label></td>
+			</tr>
+			<tr>
+				<td>Sunday:</td>
+				<td><input type="number" id="sunday"><label> Hours</label></td>
+			</tr>
+		
+		</table>
+
+		</div>
+
+		<div id="submitButton">
+			
+			<input type="button" class="submitButton" value="Tell me about my sleep" onclick="sleepCalulator()">
+
+		</div>
+
+		<div id="youSleepXHours">
+			
+			<span id="spanYouSleepXHours"></span>
+
+		</div>
+
+		<div id="goodSleepMessage">
+			
+			<span id="spanGoodSleepMessage"></span>
+
+		</div>
+
+		<div id="okSleepMessage">
+
+			<span id="spanOkSleepMessage"></span>
+
+		</div>
+
+		<div id="goodThumb">
+			
+			<span id="goodThumbSpan"><img src="images/like.png"></span>
+
+		</div>
+
+		<div id="badSleepMessage">
+
+			<span id="spanBadSleepMessage"></span>
+
+		</div>
+
+		<div id="sleepInformationWindow" class="classSleepInformationWindow">
+			
+			<table id="sleepInformationTable">
+				<tr><input type="button" class="tipButton" value="Sleep Tips" onclick="window.open('http://bettersleep.org/better-sleep/how-to-sleep-better/sleep-tips');"></tr>
+				<tr><input type="button" class="tipButton" value="Mindfullness Tips" onclick="window.open('http://www.mindful.org/10-tips-for-being-mindful-right-now/');"></tr>
+				<tr><input type="button" class="tipButton" value="Get Active!" onclick="window.open('http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/GettingActive/Get-Moving-Easy-Tips-to-Get-Active_UCM_307978_Article.jsp#.WBOB-eF946U');"></tr>
+				<tr><input type="button" class="tipButton" value="How to start eating better" onclick="window.open('http://blog.myfitnesspal.com/25-life-hacks-to-eat-better/');"></tr>
+			</table>
+
+		</div>
+		
+	</div>
+
+<script src="site.js"></script>
+
+</body>
+</html>
